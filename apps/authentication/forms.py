@@ -29,3 +29,6 @@ class CreateAccountForm(FlaskForm):
     password = PasswordField('Password',
                              id='pwd_create',
                              validators=[DataRequired()])
+    riot_username = StringField('Riot Username',
+                            id='riot_username_create',
+                            validators=[DataRequired()])
